@@ -1,15 +1,14 @@
 import { Button, Card, Collapse, Container, ListGroup, Row, Col } from "react-bootstrap";
 import EachPosition from "./EachPosition";
-import data from "../positionData.json";
 
-function Segment() {
+function Segment({ data }) {
 
     return (
         <Container className="p-3">
-            <h3 className="">Roles</h3>
+            <h3 className="">ฝ่าย {data.compartmentName}</h3>
 
             <Card className="mt-3">
-                {data.map((eachPosition, index) => <EachPosition data={eachPosition} index={index} key={`pos-${index + 1}`} />)}
+                {data.compartmentRole.map((eachPosition, index) => <EachPosition data={eachPosition} index={index} key={`pos-${index + 1}`} />)}
 
             </Card>
 

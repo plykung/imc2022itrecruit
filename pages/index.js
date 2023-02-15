@@ -4,14 +4,14 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Segment from "../components/Segment";
 import Image from 'next/image';
 
-const inter = Inter({ subsets: ['latin'] })
+import ITlist from "../compartmentList/IT.json";
 
 export default function Home() {
 
   return (
     <>
       <Head>
-        <title>CMU-IMC 2023 IT Recruit</title>
+        <title>CMU-IMC 2023 Recruit</title>
         <meta name="description" content="CMU-IMC 2023 IT Recruit" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.png" />
@@ -24,14 +24,15 @@ export default function Home() {
               <Image src={"/icon.png"} width={100} height={100} alt="IMC Logo" />
             </Col>
             <Col className='m-3'>
-              <h1>ยินดีต้อนรับสู่ฝ่าย IT</h1>
-              <h5>งาน CMU-IMC 2023</h5>
+              <h1>ยินดีต้อนรับสู่งาน CMU-IMC 2023</h1>
+              <h5>รายละเอียดเพิ่มเติมของแต่ละฝ่าย</h5>
             </Col>
 
           </Row>
         </Container>
 
-        <Segment />
+
+        <Segment data={ITlist} />
 
       </main>
     </>
