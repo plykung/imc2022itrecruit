@@ -6,7 +6,7 @@ function Segment() {
 
     return (
         <Container className="p-3">
-            <h3 className="">Specification</h3>
+            <h3 className="">Roles</h3>
 
             <Card className="mt-3">
                 {data.map((eachPosition, index) => <EachPosition data={eachPosition} index={index} key={`pos-${index + 1}`} />)}

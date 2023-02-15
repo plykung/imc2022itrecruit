@@ -1,4 +1,4 @@
-import { Button, Card, Collapse, Container, ListGroup, Row, Col } from "react-bootstrap";
+import { Button, Card, Collapse, Container, ListGroup, Row, Col, Badge } from "react-bootstrap";
 import { useState } from "react";
 import PositionJobDesc from "./PositionJobDesc";
 import PositionJobNum from "./PositionJobNum";
@@ -21,6 +21,16 @@ function EachPosition({ data, index }) {
                 <div className="d-flex justify-content-between">
                     <div>
                         <b>{index + 1}. {data.positionName}</b>
+                        {
+                            data.positionPriority ? <>&nbsp;&nbsp;
+                                <Badge pill bg="primary">
+                                    Priority
+                                </Badge>
+
+                            </> : <></>
+                        }
+
+
                     </div>
                     <div>
                         {open ? <><i className="bi bi-chevron-up"></i></> : <><i className="bi bi-chevron-down"></i></>}

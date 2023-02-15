@@ -6,7 +6,7 @@ function PositionNotReq({ data }) {
         <Row className="p-2">
             <Col>
                 <b>สิ่งที่<u>ไม่</u>จำเป็นต้องทำได้ (เดี๋ยวเรียนรู้กันได้ แต่ถ้ามีจะดีมากครับ)</b>
-                <ul>
+                <ul key='posnotreq'>
                     {data.map((each, index) =>
                         <li key={`posnotreq-${index + 1}`}>{each}</li>
                     )}
