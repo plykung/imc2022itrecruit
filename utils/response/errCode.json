@@ -1,0 +1,5 @@
+{
+    "MISSING_PARAMETER": "Missing Some Parameter, Please Check",
+    "GET_COLLECTION_DOC_ERROR": "Get Document from Collection Error.",
+    "GET_COLLECTION_ERROR": "Get Collection List Error."
+}
