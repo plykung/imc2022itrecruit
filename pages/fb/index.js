@@ -46,7 +46,7 @@ export default function Home() {
 
         {fet.status === "loading" && <CustomLoader />}
         {fet.status === "failed" && <>Failed</>}
-        {fet.status === "success" && <>{fet.data.data.map((each) => <p>compartmentID: {each.compartmentID}, compartmentName: {each.compartmentName} </p>)}</>}
+        {fet.status === "success" && <>{fet.data.data.map((each, index) => <p key={index + 1}>compartmentID: {each.compartmentID}, compartmentName: {each.compartmentName} </p>)}</>}
 
       </main>
     </>
