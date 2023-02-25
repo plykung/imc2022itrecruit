@@ -16,6 +16,7 @@ export default function Home() {
       setFet({ status: "success", data: res.data })
     }).catch((err) => {
       setFet({ status: "failed", error: err })
+
     })
   }, [])
 
