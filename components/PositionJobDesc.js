@@ -6,12 +6,17 @@ function PositionJobDesc({ data }) {
         <Container fluid>
 
             <u>หน้าที่</u>:
-            <ul>
-                {data.map((each, index) => <li key={`jobdesc-${index + 1}`}>
-                    {each}
-                </li>)
-                }
-            </ul>
+
+            {data.length === 0 ? <>&nbsp;<i>( ไม่มีข้อมูล )</i></> : <>
+
+                <ul>
+                    {data.map((each, index) => <li key={`jobdesc-${index + 1}`}>
+                        {each}
+                    </li>)
+                    }
+                </ul>
+            </>}
+
 
         </Container>
     );

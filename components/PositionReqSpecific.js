@@ -5,10 +5,14 @@ function PositionReqSpecific({ data }) {
 
         <Col md={6}>
             <b>สิ่งที่จำเป็นต้องมี (เฉพาะหน้าที่นี้)</b>
-            <ul>
+
+            {data.length === 0 ? <><br /><i>( ไม่มีข้อมูล )</i></> : <><ul>
                 {data.map((each, index) => <li key={`posspe-${index + 1}`}>{each}</li>)}
 
             </ul>
+            </>}
+
+
         </Col>
     );
 }

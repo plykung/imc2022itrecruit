@@ -7,6 +7,12 @@ function Segment({ data }) {
         <Container className="p-3">
             <h3 className="">ฝ่าย {data.compartmentName}</h3>
 
+            {data?.compartmentDesc && <p>
+                {data.compartmentDesc}
+            </p>}
+
+
+
             <Card className="mt-3">
                 {data.compartmentRole.map((eachPosition, index) => <EachPosition data={eachPosition} index={index} key={`pos-${index + 1}`} />)}
 
