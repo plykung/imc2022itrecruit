@@ -29,9 +29,9 @@ function JobCard({ formData, setFormData }) {
 
             <Card.Body>
                 <ListGroup as="ol" numbered>
-                    {formData.compartmentRole.length === 0 ? <>กด "+" เพื่อเพิ่มหน้าที่</> : <>
+                    {formData.compartmentRole.length === 0 ? <>กด &quot;+&quot; เพื่อเพิ่มหน้าที่</> : <>
                         {formData.compartmentRole.map((each, index) => {
-                            return <JobAccItem data={each} index={index} formData={formData} setFormData={setFormData} />
+                            return <JobAccItem key={index} data={each} index={index} formData={formData} setFormData={setFormData} />
 
                         })}
                     </>}
