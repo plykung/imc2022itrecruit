@@ -1,5 +1,6 @@
 {
     "compartmentName": "IT",
+    "compartmentDesc": "",
     "compartmentRole": [
         {
             "positionName": "Front-End Developer",
