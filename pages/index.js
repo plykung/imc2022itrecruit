@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 import Segment from "../components/Segment";
 import Image from 'next/image';
 
 import ITlist from "../compartmentList/IT.json";
+import CompDesign from "../compartmentList/Comp-design.json";
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -33,6 +35,19 @@ export default function Home() {
 
 
         <Segment data={ITlist} />
+        <Segment data={CompDesign} />
+
+
+        <hr />
+
+        <Container className='d-flex justify-content-center'>
+          <Row>
+            <Button variant='success' as={Link} href='/form' className='mb-3'>
+              <i class="bi bi-plus-lg"></i>&nbsp;&nbsp;For Staff
+            </Button>
+          </Row>
+
+        </Container>
 
       </main>
     </>

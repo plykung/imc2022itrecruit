@@ -1,0 +1,69 @@
+{
+    "compartmentName": "Competition Design",
+    "compartmentRole": [
+        {
+            "positionName": "Copyeditor",
+            "positionPriority": true,
+            "positionDesc": [
+                "เขียนกฎและกติกา (Rulebook) สำหรับการแข่งขัน และ เขียน Question Style Guide ให้อาจารย์สำหรับเขียนคำถามสำหรับการแข่งขัน"
+            ],
+            "positionNumber": {
+                "yr3": 2,
+                "yr2": 1,
+                "positionVary": true
+            },
+            "positionReqSpecific": [
+                "สามารถอ่านและเขียนภาษาอังกฤษได้ (เนื่องจากการแข่งขันใช้ภาษาอังกฤษเป็นหลัก)"
+            ],
+            "positionReqNotSpecific": [
+                "พอมีความเข้าใจในหลักไวยากรณ์และการพิสูจน์อักษร",
+                "มีความเชี่ยวชาญในภาษาอังกฤษ",
+                "ถ้าอยู่ชมรม MUAN ฝ่ายพิสูจน์อักษรมาก่อน...ก็จะไม่ได้รับการพิจารณาเป็นพิเศษหรอก แต่ถ้าได้ก็ดี"
+            ],
+            "positionMoreInfo": []
+        },
+        {
+            "positionName": "Outsourcer",
+            "positionPriority": true,
+            "positionDesc": [
+                "ติดต่อกับฝ่ายอื่น ๆ ในการร่วมงานทำรายละเอียดการแข่งขันต่าง ๆ"
+            ],
+            "positionNumber": {
+                "yr3": 2,
+                "yr2": 1,
+                "positionVary": true
+            },
+            "positionReqSpecific": [
+                "มีมนุษยสัมพันธ์ดี กล้าแสดงออก"
+            ],
+            "positionReqNotSpecific": [
+                "มีความอดทนสูง",
+                "มีความอดทนสูง",
+                "มีความอดทนสูง"
+            ],
+            "positionMoreInfo": []
+        },
+        {
+            "positionName": "Playtesters",
+            "positionPriority": true,
+            "positionDesc": [
+                "เป็นผู้ทดลองเกมในฝ่าย (จริง ๆ ก็คือทั้งฝ่ายนั่นแหละ คิดว่าหนีไปเขียน Rulebook แล้วจะรอดเรอะ!)"
+            ],
+            "positionNumber": {
+                "yr3": 8,
+                "yr2": 2,
+                "positionVary": true
+            },
+            "positionReqSpecific": [
+                "ชอบจับผิด ชอบหาข้อน่าติ ใส่ใจกับรายละเอียดที่คนปกติมักมองข้าม"
+            ],
+            "positionReqNotSpecific": [
+                "ชอบดูเกมโชว์",
+                "ฝันว่าสักวันหนึ่งอยากเป็นผู้เข้าแข่งขันเกมโชว์",
+                "รักการดูเกมโชว์จนมีความฝันว่าสักวันจะมาเป็นเฮดฝ่าย Competition Design ของงาน IMC",
+                "เห็นประกาศรับสมัครคนมาอยู่ Competition Design แล้วหยุดตัวเองไม่ได้ ต้องกดเข้ามาเป็นสมาชิกฝ่ายเดี๋ยวนั้น"
+            ],
+            "positionMoreInfo": []
+        }
+    ]
+}
